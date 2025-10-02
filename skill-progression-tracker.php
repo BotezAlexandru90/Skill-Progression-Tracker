@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name:       Skill Progression Tracker
- * Plugin URI:        https://example.com/
+ * Plugin URI:        https://ad.lupus.fun
  * Description:       Track EVE Online skill training progression for players. Visible only to Admins and Editors.
  * Version:           1.3.1
- * Author:            Your Name
- * Author URI:        https://example.com/
+ * Author:            Surama Badasaz
+ * Author URI:        https://ad.lupus.fun
  * License:           GPL v2 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       spt
@@ -349,3 +349,4 @@ function spt_ajax_get_row_view_handler() {
     ob_start(); spt_render_table_row($record); $row_html = ob_get_clean();
     wp_send_json_success(['row_html' => $row_html]);
 }
+
